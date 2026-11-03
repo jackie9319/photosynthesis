@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="小小植物实验室：动手探索光合作用的条件、过程与重要性。">
+  <title>光合作用 · 小小植物实验室</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/content.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="植物实验室首页"><span class="brand-icon">🌱</span><span><span class="eyebrow">LITTLE LEAF · SCIENCE LAB</span><strong data-i18n="brand">小小植物实验室</strong></span></a>
+    <div class="header-right"><span class="grade" data-i18n="grade">四年级 · 科学</span><div id="language-switch" class="language-switch" role="group" aria-label="选择语言"><button type="button" data-language="ms" lang="ms" aria-pressed="false">BM</button><button type="button" data-language="zh" lang="zh-Hans" aria-pressed="true">中文</button><button type="button" data-language="en" lang="en" aria-pressed="false">EN</button></div><button id="teacher-toggle" class="quiet-button" aria-expanded="false" data-i18n="teacher">ⓘ 教师指南</button></div>
+  </header>
+  <main>
+    <div class="intro"><div><div class="eyebrow green" data-i18n="intro">一起发现植物的秘密</div><h1><span data-i18n="topic">光合作用</span><span class="title-leaf">🌿</span></h1><p data-i18n="introText">先预测，再切换条件，看看植物还能不能制造食物。</p></div></div>
+    <aside id="teacher-guide" class="teacher-guide" hidden><strong data-i18n="teacherTitle">教师指南</strong><p data-i18n="teacherText"></p></aside>
+    <div class="workspace">
+      <section class="lab panel" aria-labelledby="activity-title">
+        <div class="lab-top"><span class="pill"><span class="live-dot"></span><span data-i18n="labTag">互动实验区</span></span><span class="step-label" data-i18n="steps">预测 → 操作 → 观察</span></div>
+        <div class="lab-heading"><h2 id="activity-title" data-i18n="heading">少了一个条件，会怎样？</h2><p data-i18n="instruction">先在条件齐全时试一试，再只关闭一个条件，比较两次结果。</p></div>
+        <div id="activity-content"></div>
+        <div class="lab-bottom"><button class="quiet-button" id="reset-activity" data-i18n="reset">↻ 重新开始实验</button><button class="quiet-button" id="sound-toggle" type="button" aria-pressed="true">🔊 声音：开</button></div>
+      </section>
+    </div>
+    <footer><span data-i18n="footer">🌱 观察 · 尝试 · 发现</span><span data-i18n="footerBrand">小小植物实验室 · 四年级科学</span></footer>
+  </main>
+</div>
+</body>
+</html>
